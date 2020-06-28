@@ -223,17 +223,26 @@ h6 {
   }
 }
 .block-system-header {
-  padding: 45px 15px;
+  padding: 25px 15px;
+}
+.block-system-header .header-menu {
+  margin-top: 25px;
 }
 .name-and-slogan a:hover {
   text-decoration: none;
 }
 .name-and-slogan {
-  font-size: 1.8em;
+  font-size: 1.5em;
   line-height: 100%;
 }
 .name-and-slogan h1 {
   font-size: 100%;
   line-height: 100%;
   margin: 0;
+}
+.site-slogan {
+  font-size: initial;
+}
+.admin-bar .l-header-inner {
+  padding-top: 33px;
 }
