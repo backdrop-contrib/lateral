@@ -1,10 +1,16 @@
-# lateral
+# Lateral
 
 Backdrop CMS theme, work in progress...
 
 ## Current Maintainers
 
-- indigoxela
+- [Indigoxela](https://github.com/indigoxela)
+
+## Credits
+
+Default hero background image by Adam Derewecki,
+https://pixabay.com/photos/fairyland-canyon-utah-park-1632749/
+(Pixabay License)
 
 ## License
 
