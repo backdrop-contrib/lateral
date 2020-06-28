@@ -1,0 +1,11 @@
+name = Lateral
+description = Theme with header on left or right side.
+type = theme
+backdrop = 1.x
+
+stylesheets[all][] = css/base.css
+stylesheets[all][] = css/colors.css
+
+scripts[] = js/helper.js
+
+settings[header_position] = 'left'

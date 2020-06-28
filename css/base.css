@@ -1,0 +1,239 @@
+body {
+  font: 1rem/1.6 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.container-fluid {
+  max-width: 100%;
+  margin: 0 1rem;
+}
+.header-site-name-link {
+  background: inherit;
+  line-height: 1.6;
+}
+.layout .l-messages {
+  margin: 0;
+}
+.page-title {
+  text-align: center;
+  margin: 1em 0;
+  padding: 0 0 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+.l-header-inner {
+  margin: 0;
+  padding: 0;
+}
+.l-header .menu {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+.l-header .menu a {
+  font-size: 1.2rem;
+  display: block;
+  padding: 10px 15px;
+}
+.l-header .menu a:hover {
+  text-decoration: none;
+}
+@media screen and (max-width: 570px) {
+  .container-fluid {
+    margin: 0;
+  }
+  .l-header .menu a,
+  .header-menu a {
+    padding: 1rem 10px;
+  }
+}
+ol,
+ul,
+.item-list ol,
+.item-list ul {
+  margin: 1em 0 1em 1em;
+  padding: 0 0 0 1.2em;
+}
+ul {
+}
+.item-list li {
+  margin: 0;
+}
+ul.primary li a {
+  padding: .5em 1.2em;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+ul.secondary a {
+  padding: .3em .7em;
+  border-radius: 7px;
+}
+blockquote {
+  margin: 1em 0;
+  padding: 0 0 0 1em;
+}
+pre {
+  padding: 4px;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 3px;
+}
+table {
+  display: block;
+  border-collapse: collapse;
+  max-width: 100%;
+  overflow: auto;
+}
+tr.even {
+  background-color: initial;/* FIXME palette? */
+}
+td, th {
+  padding: 4px 8px;
+  vertical-align: top;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: 1rem/1.6 'Open Sans', sans-serif;
+  max-width: 100%;
+}
+input.form-submit {
+  padding: 7px 15px;
+  margin: 0 10px 10px 0;
+}
+select {
+  padding: 4px 8px;
+}
+.filter-wrapper {
+  padding: 1em .5em;
+}
+.vertical-tab-link {
+  word-break: break-all;
+  font-size: 96%;
+}
+/* pager */
+.item-list .pager li {
+  display: inline-block;
+  padding: 0;
+}
+.item-list .pager .pager-current,
+.item-list .pager .pager-ellipsis,
+.pager a {
+  display: inline-block;
+  padding: 0.5em 0.8em;
+}
+.item-list .pager a:hover {
+  text-decoration: none;
+}
+/* search */
+.search-block-form > div {
+  display: flex;
+}
+.search-block-form input.form-search {
+  padding: 6px;
+}
+.search-block-form input.form-submit {
+  border: none;
+  padding: 7px 12px;
+}
+.search-block-form input.form-submit:hover,
+.search-block-form input.form-submit:focus {
+  outline: none;
+}
+.search-info {
+  font-size: 95%;
+}
+.progress {
+  font-weight: bold;
+}
+.vertical-tabs-panes {
+  padding: 8px;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1.4;
+}
+h2 {
+  font-size: 1.7em;
+  line-height: 1.5;
+}
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 2.3em;
+  }
+  h2 {
+    font-size: 1.9em;
+  }
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+}
+.form-type-checkbox label,
+.form-type-radio label {
+  margin-left: 4px;
+}
+/* hero */
+.block-hero {
+  font-size: 120%;
+  height: 100vh;
+  margin-left: -1.9375rem;
+  margin-right: -1.9375rem;
+  position: static;
+  transform: none;
+  padding: 0 1em;
+  overflow: hidden;
+}
+.block-hero-no-image {
+  background-image: url("../images/fairyland-canyon.jpg");
+}
+.block-hero .contextual-links-wrapper {
+  width: 40px;
+  height: 40px;
+}
+.block-hero-inner {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 960px) {
+  .block-hero {
+    font-size: 160%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+}
+@media screen and (min-width: 1200) {
+  .block-hero {
+    font-size: 190%;
+  }
+}
+.block-system-header {
+  padding: 45px 15px;
+}
+.name-and-slogan a:hover {
+  text-decoration: none;
+}
+.name-and-slogan {
+  font-size: 1.8em;
+  line-height: 100%;
+}
+.name-and-slogan h1 {
+  font-size: 100%;
+  line-height: 100%;
+  margin: 0;
+}
