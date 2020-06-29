@@ -1,6 +1,3 @@
-body {
-  font: 1rem/1.6 'Open Sans', sans-serif;
-}
 a {
   text-decoration: none;
 }
@@ -111,7 +108,6 @@ input,
 optgroup,
 select,
 textarea {
-  font: 1rem/1.6 'Open Sans', sans-serif;
   max-width: 100%;
 }
 input.form-submit {

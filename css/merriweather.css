@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/merriweather/Merriweather-Regular.eot'); /* Old IE */
+  src:
+    url('../fonts/merriweather/Merriweather-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather/Merriweather-Regular.woff') format('woff'),
+    url('../fonts/merriweather/Merriweather-Regular.woff2') format('woff2'),
+    url('../fonts/merriweather/Merriweather-Regular.ttf') format('truetype'),
+    url('../fonts/merriweather/Merriweather-Regular.svg#Merriweather-Regular') format('svg');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 400;
+  src: url('../fonts/merriweather/Merriweather-Italic.eot'); /* Old IE */
+  src:
+    url('../fonts/merriweather/Merriweather-Italic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather/Merriweather-Italic.woff') format('woff'),
+    url('../fonts/merriweather/Merriweather-Italic.woff2') format('woff2'),
+    url('../fonts/merriweather/Merriweather-Italic.ttf') format('truetype'),
+    url('../fonts/merriweather/Merriweather-Italic.svg#Merriweather-Italic') format('svg');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/merriweather/Merriweather-Bold.eot'); /* Old IE */
+  src:
+    url('../fonts/merriweather/Merriweather-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather/Merriweather-Bold.woff') format('woff'),
+    url('../fonts/merriweather/Merriweather-Bold.woff2') format('woff2'),
+    url('../fonts/merriweather/Merriweather-Bold.ttf') format('truetype'),
+    url('../fonts/merriweather/Merriweather-Bold.svg#Merriweather-Bold') format('svg');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: italic;
+  font-weight: 700;
+  src: url('../fonts/merriweather/Merriweather-BoldItalic.eot'); /* Old IE */
+  src:
+    url('../fonts/merriweather/Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/merriweather/Merriweather-BoldItalic.woff') format('woff'),
+    url('../fonts/merriweather/Merriweather-BoldItalic.woff2') format('woff2'),
+    url('../fonts/merriweather/Merriweather-BoldItalic.ttf') format('truetype'),
+    url('../fonts/merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic') format('svg');
+}
+body {
+  font: 1rem/1.6 arial, sans-serif;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: 1rem/1.6 arial, sans-serif;
+}
+.site-name,
+ul.menu,
+.block-hero,
+h1, h2, h3, h4, h5, h6 {
+  font-family: Merriweather, serif;
+}

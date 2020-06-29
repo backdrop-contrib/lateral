@@ -9,3 +9,4 @@ stylesheets[all][] = css/colors.css
 scripts[] = js/helper.js
 
 settings[header_position] = 'left'
+settings[font] = 'opensans'

@@ -11,9 +11,17 @@
  */
 function lateral_preprocess_page(&$variables) {
   $path = backdrop_get_path('theme', 'lateral');
-  // Add the OpenSans font from core on every page of the site.
-  // @todo configurable font?
-  backdrop_add_library('system', 'opensans', TRUE);
+  // Font stylesheets according to theme settings.
+  if (theme_get_setting('font') == 'merriweather') {
+    backdrop_add_css($path . '/css/merriweather.css');
+  }
+  elseif (theme_get_setting('font') == 'opensans') {
+    backdrop_add_library('system', 'opensans', TRUE);
+    backdrop_add_css($path . '/css/use-opensans.css');
+  }
+  else {
+    backdrop_add_css($path . '/css/nowebfont.css');
+  }
   // Header on the left or right side.
   if (theme_get_setting('header_position') == 'right') {
     backdrop_add_css($path . '/css/headerright.css');
