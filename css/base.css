@@ -22,7 +22,6 @@ a:hover {
   text-align: center;
   margin: 1em 0;
   padding: 0 0 0.5em;
-  border-bottom: 1px solid #ccc;
 }
 .l-header-inner {
   margin: 0;
@@ -33,6 +32,23 @@ a:hover {
   padding: 0;
   margin: 1rem 0;
 }
+.l-header .menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.l-header .menu ul li a::before {
+  content: " ";
+  display: inline-block;
+  border: 2px solid;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  width: 5px;
+  height: 5px;
+  margin: 0 10px 0 -5px;
+  vertical-align: middle;
+  transform: rotate(-45deg);
+}
 .l-header .menu a {
   font-size: 1.2rem;
   display: block;
@@ -41,14 +57,10 @@ a:hover {
 .l-header .menu a:hover {
   text-decoration: none;
 }
-@media screen and (max-width: 570px) {
-  .container-fluid {
-    margin: 0;
-  }
-  .l-header .menu a,
-  .header-menu a {
-    padding: 1rem 10px;
-  }
+.l-header .menu a.active {
+}
+.l-header .menu ul ul a {
+  text-indent: 20px;
 }
 ol,
 ul,
@@ -283,4 +295,23 @@ h6 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
+}
+@media screen and (max-width: 570px) {
+  .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .l-header .container-fluid {
+    padding: 0;
+  }
+  .block-hero {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .l-header .menu a,
+  .header-menu a {
+    padding: 8px 10px;
+  }
 }

@@ -17,12 +17,24 @@ a,
 .l-header a {
   color: #fffffe;
 }
+.l-header .menu a {
+  border-bottom: 1px dotted #2c4a64;
+}
 .l-header .menu a:hover {
   background-color: #2c4a64;
+}
+.header-left .l-header .menu a.active {
+  border-left: 10px solid #2c4a64;
+}
+.header-right .l-header .menu a.active {
+  border-right: 10px solid #2c4a64;
 }
 ul.primary li a {
   background-color: #e6e6e6;
   border-color: #333344;
+}
+.page-title {
+  border-bottom: 1px solid #cccccc;
 }
 /**
  * Pager
@@ -127,7 +139,7 @@ tr.odd {
 td.active {
   background-color: #e6e6e6;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .l-header .menu-toggle-button {
     background-color: #fffffe;
     color: #20252e;

@@ -37,15 +37,16 @@
 .menu-toggle-button {
   display: none;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1024px) {
   .menu-toggle-button {
     display: block;
     text-align: right;
+    opacity: 0.9;
   }
   .l-header {
-    width: 250px;
+    width: 270px;
     bottom: 0;
-    right: -225px;
+    right: -250px;
     transition: right 0.3s;
     box-shadow: 5px 0 10px #0001;
   }
@@ -72,7 +73,7 @@
     position: absolute;
     left: -32px;
     top: 50%;
-    border-radius: 2px;
+    border-radius: 4px;
   }
   .menu-toggle-button-text {
     display: block;
@@ -102,6 +103,6 @@
   .l-wrapper,
   .l-footer {
     width: auto;
-    margin-right: 25px;
+    margin-right: 20px;
   }
 }
