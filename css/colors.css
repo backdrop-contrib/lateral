@@ -20,6 +20,10 @@ a,
 .l-header .menu a:hover {
   background-color: #2c4a64;
 }
+ul.primary li a {
+  background-color: #e6e6e6;
+  border-color: #333344;
+}
 /**
  * Pager
  */
@@ -65,10 +69,10 @@ a,
   background: #386e9d;
 }
 blockquote {
-  border-left: 4px solid #ccc;
+  border-left: 4px solid #cccccc;
 }
 pre {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 fieldset,
 button,
@@ -76,22 +80,23 @@ input,
 optgroup,
 select,
 textarea {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
   color: #333344;
 }
 button:focus,
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: #386e9d;
+  border-color: #509bdd;
 }
 input.form-submit {
-  color: #fff;
-  background-color: #386e9d;
+  color: #fffffd;
+  border-color: #ffffff;
+  background-color: #386e9e;
 }
 input.button-danger {
   background-color: #ff4747;
-  border-color: #fff;
+  border-color: #ffffff;
 }
 input.form-submit:hover,
 input.form-submit:focus {
@@ -102,10 +107,10 @@ input.button-danger:hover {
 }
 select {
   background-color: initial;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 .vertical-tabs {
-  background-color: #e6e6e6;
+  background-color: #e6e6e7;
 }
 .vertical-tabs-panes {
   background-color: #ffffff;
@@ -114,7 +119,7 @@ select {
   background-color: #f8f8f8;/* todo */
 }
 tr.even, tr.odd {
-  border-color: #ccc;
+  border-color: #cccccc;
 }
 tr.odd {
   background-color: #f8f8f8;
@@ -143,5 +148,12 @@ td.active {
 }
 .block-hero {
   color: #feffff;
-  background-color: #556;
+  background-color: #2B2F42;
+}
+.l-footer {
+  background-color: #20252f;
+  color: #fffdff;
+}
+.l-footer a {
+  color: #fffdff;
 }

@@ -3,7 +3,7 @@ $info = array(
   // Available colors and color labels used in theme.
   'fields' => array(
     'header' => t('Header background'),
-    'titleslogan' => t('Site name and slogan'),
+    'headertext' => t('Header text and links'),
     'hovermenu' => t('Main menu hover background'),
 
     'herotext' => t('Hero text'),
@@ -14,14 +14,14 @@ $info = array(
     'link' => t('Link color'),
     'borders' => t('Borders'),
     'formfocusborder' => t('Form element borders when selected'),
-
     'primarytabs' => t('Primary Tabs Background'),
-    'primarytabstext' => t('Primary Tabs Text'),
-    'buttons' => t('Buttons and Breadcrumb'),
+    'buttons' => t('Buttons background'),
+    'buttonstext' => t('Buttons text'),
+    'lightbg' => t('Light backgrounds'),
+    'darkbg' => t('Dark backgrounds'),
 
     'footer' => t('Footer background'),
     'footertext' => t('Footer text'),
-    'footerborder' => t('Footer Border'),
   ),
   // Pre-defined color schemes.
   'schemes' => array(
@@ -29,25 +29,25 @@ $info = array(
       'title' => t('Lateral (default)'),
       'colors' => array(
         'header' => '#20252e',
-        'titleslogan' => '#fffffe',
-        'hovermenu' => '#114a75',
+        'headertext' => '#fffffe',
+        'hovermenu' => '#2c4a64',
 
         'herotext' => '#feffff',
-        'herobg' => '#393959',
+        'herobg' => '#2b2f42',
 
         'base' => '#ffffff',
         'text' => '#333344',
         'link' => '#386e9d',
-        'borders' => '#bbbbbb',
-        'formfocusborder' => '#43afe4',
+        'borders' => '#cccccc',
+        'formfocusborder' => '#509bdd',
+        'primarytabs' => '#e6e6e6',
+        'buttons' => '#386e9e',
+        'buttonstext' => '#fffffd',
+        'lightbg' => '#f8f8f8',
+        'darkbg' => '#e6e6e7',
 
-        'primarytabs' => '#586172',
-        'primarytabstext' => '#010000',
-        'buttons' => '#dee2ea',
-
-        'footer' => '#fffeff',
-        'footertext' => '#000100',
-        'footerborder' => '#bbbbbc',
+        'footer' => '#20252f',
+        'footertext' => '#fffdff',
       ),
     ),
   ),

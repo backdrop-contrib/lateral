@@ -36,7 +36,7 @@ function lateral_form_system_theme_settings_alter(&$form, &$form_state) {
     );
     $fields = array(
       'header',
-      'titleslogan',
+      'headertext',
       'hovermenu',
     );
     foreach ($fields as $field) {
@@ -65,22 +65,14 @@ function lateral_form_system_theme_settings_alter(&$form, &$form_state) {
       'link',
       'borders',
       'formfocusborder',
+      'primarytabs',
+      'buttons',
+      'buttonstext',
+      'lightbg',
+      'darkbg',
     );
     foreach ($fields as $field) {
       $form['general'][$field] = color_get_color_element($form['theme']['#value'], $field, $form);
-    }
-    $form['primary_tabs'] = array(
-      '#type' => 'fieldset',
-      '#title' => t('Tabs and Breadcrumb'),
-      '#collapsible' => TRUE,
-    );
-    $fields = array(
-      'primarytabs',
-      'primarytabstext',
-      'buttons',
-    );
-    foreach ($fields as $field) {
-      $form['primary_tabs'][$field] = color_get_color_element($form['theme']['#value'], $field, $form);
     }
     $form['footer'] = array(
       '#type' => 'fieldset',
@@ -88,7 +80,6 @@ function lateral_form_system_theme_settings_alter(&$form, &$form_state) {
       '#collapsible' => TRUE,
     );
     $fields = array(
-      'footerborder',
       'footer',
       'footertext',
     );
