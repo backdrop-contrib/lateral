@@ -1,6 +1,6 @@
 # Lateral
 
-Backdrop CMS theme, work in progress...
+Highly configurable Backdrop CMS theme, work in progress...
 
 ## Current Maintainers
 

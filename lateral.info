@@ -1,5 +1,5 @@
 name = Lateral
-description = Theme with header on left or right side.
+description = Highly configurable theme with header on left or right side.
 type = theme
 backdrop = 1.x
 
