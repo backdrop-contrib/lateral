@@ -103,6 +103,10 @@ td, th {
   padding: 4px 8px;
   vertical-align: top;
 }
+audio,
+video,
+iframe,
+form,
 button,
 input,
 optgroup,
@@ -167,7 +171,7 @@ h1 {
   line-height: 1.4;
 }
 h2 {
-  font-size: 1.7em;
+  font-size: 1.6em;
   line-height: 1.5;
 }
 @media screen and (min-width: 960px) {
@@ -175,7 +179,7 @@ h2 {
     font-size: 2.3em;
   }
   h2 {
-    font-size: 1.9em;
+    font-size: 1.7em;
   }
 }
 h3 {
@@ -250,7 +254,7 @@ h6 {
   font-size: 1.5em;
   line-height: 100%;
 }
-.name-and-slogan h1 {
+.name-and-slogan .site-name {
   font-size: 100%;
   line-height: 110%;
   margin: 1rem 0;
@@ -265,6 +269,9 @@ h6 {
   padding: 1em 0;
   font-size: 0.95rem;
   margin-top: 25px;
+}
+.submitted {
+  font-size: 0.9rem;
 }
 /* Push the footer down to the bottom of the page. */
 .layout {

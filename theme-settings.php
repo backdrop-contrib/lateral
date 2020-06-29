@@ -29,6 +29,7 @@ function lateral_form_system_theme_settings_alter(&$form, &$form_state) {
       '#type' => 'fieldset',
       '#title' => t('Hero Settings'),
       '#collapsible' => TRUE,
+      '#description' => t('You might want to change the hero image prior to changing the colors.'),
     );
     $fields = array(
       'herotext',
