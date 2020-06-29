@@ -1,6 +1,6 @@
 .l-header {
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   z-index: 33;
   min-height: 100%;
@@ -8,7 +8,7 @@
 }
 .l-wrapper,
 .l-footer {
-  margin-left: 22vw;
+  margin-right: 22vw;
 }
 .js .menu-dropdown > li {
   float: none;
@@ -45,8 +45,8 @@
   .l-header {
     width: 250px;
     bottom: 0;
-    left: -225px;
-    transition: left 0.3s;
+    right: -225px;
+    transition: right 0.3s;
     box-shadow: 5px 0 10px #0001;
   }
   .l-header .block,
@@ -57,8 +57,8 @@
     visibility: visible;
   }
   .l-header.nav-visible {
-    left: 0;
-    transition: left 0.3s;
+    right: 0;
+    transition: right 0.3s;
   }
   .l-header.nav-visible .block,
   .l-header.nav-visible .menu {
@@ -70,7 +70,7 @@
     margin: -21px 0 0;
     padding: 0;
     position: absolute;
-    right: -32px;
+    left: -32px;
     top: 50%;
     border-radius: 2px;
   }
@@ -96,12 +96,12 @@
     width: 16px;
     height: 16px;
     overflow: hidden;
-    margin: 8px 3px 0 0;
-    transform: rotate(45deg);
+    margin: 8px 14px 0 0;
+    transform: rotate(225deg);
   }
   .l-wrapper,
   .l-footer {
     width: auto;
-    margin-left: 25px;
+    margin-right: 25px;
   }
 }

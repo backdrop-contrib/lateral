@@ -13,9 +13,13 @@ function lateral_preprocess_page(&$variables) {
   $path = backdrop_get_path('theme', 'lateral');
   // Add the OpenSans font from core on every page of the site.
   backdrop_add_library('system', 'opensans', TRUE);
-  // Header on the left.
-  // @todo configurable sides
-  backdrop_add_css($path . '/css/headerleft.css');
+  // Header on the left or right side.
+  if (theme_get_setting('header_position') == 'right') {
+    backdrop_add_css($path . '/css/headerright.css');
+  }
+  else {
+    backdrop_add_css($path . '/css/headerleft.css');
+  }
 }
 
 /**
