@@ -50,6 +50,81 @@ $info = array(
         'footertext' => '#fffdff',
       ),
     ),
+    'frostypastel' => array(
+      'title' => t('Frosty pastel'),
+      'colors' => array(
+        'header' => '#EFF0F2',
+        'headertext' => '#5B6881',
+        'hovermenu' => '#F9FAFF',
+
+        'herotext' => '#3C4664',
+        'herobg' => '#CED6FF',
+
+        'base' => '#ffffff',
+        'text' => '#585C66',
+        'link' => '#B64196',
+        'borders' => '#cccccc',
+        'formfocusborder' => '#509bdd',
+        'primarytabs' => '#e6e6e6',
+        'buttons' => '#385F9E',
+        'buttonstext' => '#fffffd',
+        'lightbg' => '#f8f8f8',
+        'darkbg' => '#e6e6e7',
+
+        'footer' => '#CDCFD3',
+        'footertext' => '#606060',
+      ),
+    ),
+    'night' => array(
+      'title' => t('Night'),
+      'colors' => array(
+        'header' => '#32383f',
+        'headertext' => '#eeeeee',
+        'hovermenu' => '#4b5660',
+
+        'herotext' => '#feffa2',
+        'herobg' => '#222222',
+
+        'base' => '#1f2126',
+        'text' => '#efefef',
+        'link' => '#dfd040',
+        'borders' => '#ebe238',
+        'formfocusborder' => '#70ec46',
+        'primarytabs' => '#525252',
+        'buttons' => '#dfce20',
+        'buttonstext' => '#363617',
+        'lightbg' => '#565656',
+        'darkbg' => '#222223',
+
+        'footer' => '#161616',
+        'footertext' => '#c1c1c1',
+      ),
+    ),
+    'nature' => array(
+      'title' => t('Nature'),
+      'colors' => array(
+        'header' => '#65734f',
+        'headertext' => '#fffffe',
+        'hovermenu' => '#748957',
+
+        'herotext' => '#feffff',
+        'herobg' => '#8b9477',
+
+        'base' => '#fcfbea',
+        'text' => '#373129',
+        'link' => '#4f7f00',
+        'borders' => '#868874',
+        'formfocusborder' => '#21cb00',
+        'primarytabs' => '#e6e6e6',
+        'buttons' => '#708a34',
+        'buttonstext' => '#fffffd',
+        'lightbg' => '#f6f7e3',
+        'darkbg' => '#d4d5c0',
+
+        'footer' => '#666553',
+        'footertext' => '#fffdff',
+      ),
+    ),
   ),
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => array(

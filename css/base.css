@@ -72,9 +72,17 @@ ul {
   margin: 0;
 }
 ul.primary li a {
-  padding: .5em 1.2em;
-  border-top-right-radius: 7px;
-  border-top-left-radius: 7px;
+}
+@media screen and (min-width: 920px) {
+  ul.primary li {
+    float: left;
+    margin: 0 0.15em 0 0;
+  }
+  ul.primary li a {
+    padding: .5em 1.2em;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
 }
 ul.secondary a {
   padding: .3em .7em;
@@ -201,7 +209,6 @@ h6 {
 /* hero */
 .block-hero {
   font-size: 120%;
-  height: 100vh;
   margin-left: -1.9375rem;
   margin-right: -1.9375rem;
   position: static;
@@ -221,10 +228,19 @@ h6 {
   margin-top: 0;
 }
 .block-hero-inner {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: 2em 0;
+}
+@media screen and (min-width: 600px) {
+  .block-hero {
+    height: 100vh;
+  }
+  .block-hero-inner {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 @media screen and (min-width: 960px) {
   .block-hero {

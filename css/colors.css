@@ -29,9 +29,16 @@ a,
 .header-right .l-header .menu a.active {
   border-right: 10px solid #2c4a64;
 }
-ul.primary li a {
+ul.primary li a,
+ul.primary li a:hover {
   background-color: #e6e6e6;
   border-color: #333344;
+}
+ul.primary li.active a {
+  background-color: #ffffff;
+}
+.menu-tree li a.active {
+  color: #333344;
 }
 .page-title {
   border-bottom: 1px solid #cccccc;
@@ -94,6 +101,7 @@ select,
 textarea {
   border: 1px solid #cccccc;
   color: #333344;
+  background: initial;
 }
 button:focus,
 input:focus,
@@ -123,12 +131,14 @@ select {
 }
 .vertical-tabs {
   background-color: #e6e6e7;
+  border: 1px solid #cccccc;
 }
 .vertical-tabs-panes {
   background-color: #ffffff;
 }
 .vertical-tab-item {
-  background-color: #f8f8f8;/* todo */
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
 }
 tr.even, tr.odd {
   border-color: #cccccc;
