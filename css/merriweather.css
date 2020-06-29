@@ -50,14 +50,14 @@
     url('../fonts/merriweather/Merriweather-BoldItalic.svg#Merriweather-BoldItalic') format('svg');
 }
 body {
-  font: 1rem/1.6 arial, sans-serif;
+  font: 1rem/1.6 verdana, sans-serif;
 }
 button,
 input,
 optgroup,
 select,
 textarea {
-  font: 1rem/1.6 arial, sans-serif;
+  font: 1rem/1.6 verdana, sans-serif;
 }
 .site-name,
 ul.menu,
