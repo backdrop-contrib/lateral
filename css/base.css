@@ -36,7 +36,7 @@ a:hover {
 .l-header .menu a {
   font-size: 1.2rem;
   display: block;
-  padding: 10px 15px;
+  padding: 10px 1.8vw;
 }
 .l-header .menu a:hover {
   text-decoration: none;
@@ -203,6 +203,10 @@ h6 {
 .block-hero .contextual-links-wrapper {
   width: 40px;
   height: 40px;
+  font-size: 1rem;
+}
+.block-hero .block-title {
+  margin-top: 0;
 }
 .block-hero-inner {
   position: relative;
@@ -222,8 +226,11 @@ h6 {
     font-size: 190%;
   }
 }
-.block-system-header {
-  padding: 25px 15px;
+.l-header-inner .block {
+  padding: 25px 1.8vw;
+}
+.l-header-inner .block-system-main-menu {
+  padding: 0;
 }
 .block-system-header .header-menu {
   margin-top: 25px;
@@ -237,8 +244,8 @@ h6 {
 }
 .name-and-slogan h1 {
   font-size: 100%;
-  line-height: 100%;
-  margin: 0;
+  line-height: 110%;
+  margin: 1rem 0;
 }
 .site-slogan {
   font-size: initial;
