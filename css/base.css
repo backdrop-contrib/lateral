@@ -105,14 +105,15 @@ table {
   display: block;
   border-collapse: collapse;
   max-width: 100%;
-  overflow: auto;
+  overflow-x: auto;
   margin: 1em 0;
+  padding-bottom: 1em;
 }
 tr.even {
   background-color: initial;/* FIXME palette? */
 }
 td, th {
-  padding: 4px 8px;
+  padding: 4px 10px;
   vertical-align: top;
 }
 audio,
@@ -131,6 +132,9 @@ button.form-submit,
 .button {
   padding: 7px 15px;
   margin: 0 10px 15px 0;
+}
+.button:hover {
+  text-decoration: none;
 }
 a.form-cancel {
   margin: 0 10px 15px 0;

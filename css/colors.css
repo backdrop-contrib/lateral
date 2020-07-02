@@ -115,7 +115,7 @@ input.form-submit,
 button.form-submit,
 .button {
   color: #fffffd;
-  border-color: #ffffff;
+  border: 1px solid #ffffff;
   background-color: #386e9e;
 }
 input.button-danger {
@@ -134,6 +134,9 @@ button.form-submit:focus,
 }
 input.button-danger:hover {
   outline-color: #ff4747;
+}
+.button.form-delete {
+  background-color: #ff4747;
 }
 select {
   background-color: initial;
