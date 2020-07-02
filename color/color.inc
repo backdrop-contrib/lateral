@@ -62,12 +62,12 @@ $info = array(
 
         'base' => '#ffffff',
         'text' => '#585C66',
-        'link' => '#B64196',
+        'link' => '#c86eaf',
         'borders' => '#cccccc',
         'formfocusborder' => '#509bdd',
         'primarytabs' => '#e6e6e6',
-        'buttons' => '#385F9E',
-        'buttonstext' => '#fffffd',
+        'buttons' => '#F3C4E6',
+        'buttonstext' => '#585C55',
         'lightbg' => '#f8f8f8',
         'darkbg' => '#e6e6e7',
 
@@ -87,7 +87,7 @@ $info = array(
 
         'base' => '#1f2126',
         'text' => '#efefef',
-        'link' => '#dfd040',
+        'link' => '#d7cf00',
         'borders' => '#ebe238',
         'formfocusborder' => '#70ec46',
         'primarytabs' => '#525252',
@@ -116,7 +116,7 @@ $info = array(
         'borders' => '#868874',
         'formfocusborder' => '#21cb00',
         'primarytabs' => '#e6e6e6',
-        'buttons' => '#708a34',
+        'buttons' => '#7C993A',
         'buttonstext' => '#fffffd',
         'lightbg' => '#f6f7e3',
         'darkbg' => '#d4d5c0',

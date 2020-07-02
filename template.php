@@ -74,3 +74,34 @@ function lateral_css_alter(&$css) {
 function lateral_js_alter(&$javascript) {
   unset($javascript['core/modules/system/js/menus.js']);
 }
+
+/**
+ * Implements hook_ckeditor_settings_alter().
+ *
+ * Dynamically inject content css based on theme settings.
+ */
+function lateral_ckeditor_settings_alter(&$settings, $format) {
+  global $base_url, $base_path;
+  $path = $base_path . backdrop_get_path('theme', 'lateral');
+  $font_selected = theme_get_setting('font');
+
+  if ($font_selected == 'merriweather') {
+    $settings['contentsCss'][] = $path . '/css/merriweather.css';
+  }
+  elseif ($font_selected == 'opensans') {
+    //$settings['contentsCss'][] = $base_path . 'misc/opensans/opensans.css';
+    $settings['contentsCss'][] = $path . '/css/use-opensans.css';
+  }
+  $color_uris = theme_get_setting('color.files');
+  if ($color_uris) {
+    // We only have a single color css file.
+    $color_uri = reset($color_uris);
+    $url = file_create_url($color_uri);
+    $color_css = substr($url, strlen($base_url));
+    $settings['contentsCss'][] = $color_css;
+  }
+  else {
+    // No color module setting, add the theme's default file.
+    $settings['contentsCss'][] = $path . '/css/colors.css';
+  }
+}

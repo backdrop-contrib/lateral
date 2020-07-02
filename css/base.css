@@ -66,6 +66,9 @@ ul,
   margin: 1em 0 1em 1em;
   padding: 0 0 0 1.2em;
 }
+.links li {
+  list-style-type: square;
+}
 ul {
 }
 .item-list li {
@@ -103,6 +106,7 @@ table {
   border-collapse: collapse;
   max-width: 100%;
   overflow: auto;
+  margin: 1em 0;
 }
 tr.even {
   background-color: initial;/* FIXME palette? */
@@ -122,9 +126,17 @@ select,
 textarea {
   max-width: 100%;
 }
-input.form-submit {
+input.form-submit,
+button.form-submit,
+.button {
   padding: 7px 15px;
-  margin: 0 10px 10px 0;
+  margin: 0 10px 15px 0;
+}
+a.form-cancel {
+  margin: 0 10px 15px 0;
+}
+.file-managed-file-browser-form .dialog-cancel {
+  display: none; /* WTF */
 }
 select {
   padding: 4px 8px;
@@ -332,5 +344,63 @@ h6 {
   .l-header .menu a,
   .header-menu a {
     padding: 8px 10px;
+  }
+}
+/** comments **/
+.comment {
+  padding: 15px;
+  margin: 0 0 15px;
+  border-radius: 4px;
+}
+.comments .indented {
+  position: relative;
+}
+.comments .indented .comment::before {
+  content: " ";
+  display: block;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 20px;
+  left: -28px;
+}
+.comment h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.comment ul.links {
+  display: block;
+  margin-bottom: 0;
+  text-align: right;
+}
+/* teaserlists */
+.view-promoted .view-content {
+  margin-bottom: 40px;
+}
+.view-promoted .view-content > div {
+  padding: 20px;
+}
+.view-promoted .view-content .links {
+  display: block;
+  text-align: right;
+}
+@media screen and (min-width: 960px) {
+  .view-promoted .view-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .view-mode-teaser > h2 {
+    margin-top: 0;
+  }
+  .view-promoted .view-content > div {
+    padding: 40px;
+    margin: 0;
+    width: calc(50% - 81px);
+  }
+  .view-promoted .view-content > div:last-child,
+  .view-promoted .view-content > div:nth-last-child(2) {
+    border-bottom: none;
   }
 }

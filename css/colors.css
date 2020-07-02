@@ -14,7 +14,8 @@ a,
   background-color: #20252e;
   color: #fffffe;
 }
-.l-header a {
+.l-header a,
+.l-header .links li {
   color: #fffffe;
 }
 .l-header .menu a {
@@ -54,7 +55,7 @@ ul.primary li.active a {
 .pager-last,
 .pager-item {
   background: #2c4a64;
-  color: #ffffff;
+  color: #fffffe;
 }
 .pager-ellipsis {
   color: #586172;
@@ -64,7 +65,7 @@ ul.primary li.active a {
 .pager-next a,
 .pager-last a,
 .pager-item a {
-  color: #ffffff;
+  color: #fffffe;
 }
 .pager-first a:hover,
 .pager-previous a:hover,
@@ -74,7 +75,8 @@ ul.primary li.active a {
   background: #386e9d;
 }
 .pager-current {
-  background: #212833;
+  background: #888b8e;
+  color: #fff;
 }
 
 /**
@@ -109,7 +111,9 @@ select:focus,
 textarea:focus {
   border-color: #509bdd;
 }
-input.form-submit {
+input.form-submit,
+button.form-submit,
+.button {
   color: #fffffd;
   border-color: #ffffff;
   background-color: #386e9e;
@@ -119,7 +123,13 @@ input.button-danger {
   border-color: #ffffff;
 }
 input.form-submit:hover,
-input.form-submit:focus {
+input.form-submit:focus,
+button.form-submit:hover,
+button.form-submit:focus,
+.button:hover,
+.buttom:focus {
+  background-color: #386e9e;
+  color: #fffffd;
   outline: 1px solid #386e9d;
 }
 input.button-danger:hover {
@@ -178,4 +188,21 @@ td.active {
 }
 .l-footer a {
   color: #fffdff;
+}
+.comment {
+  border: 1px solid #cccccc;
+  background-color: #f8f8f8;
+}
+.comments .indented .comment::before {
+  border: 2px solid #cccccc;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+.view-promoted .view-content > div {
+  border-bottom: 1px solid #cccccc;
+}
+@media screen and (min-width: 960px) {
+  .view-promoted .view-content > div:nth-child(odd) {
+    border-right: 1px solid #cccccc;
+  }
 }
