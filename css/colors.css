@@ -73,6 +73,7 @@ ul.primary li.active a {
 .pager-last a:hover,
 .pager-item a:hover {
   background: #386e9d;
+  color: #ffffff;
 }
 .pager-current {
   background: #888b8e;
@@ -105,6 +106,9 @@ textarea {
   color: #333344;
   background: initial;
 }
+.form-item-disabled input {
+  background-color: #f8f8f8;
+}
 button:focus,
 input:focus,
 select:focus,
@@ -133,10 +137,13 @@ button.form-submit:focus,
   outline: 1px solid #386e9d;
 }
 input.button-danger:hover {
+  background-color: #ff4747;
   outline-color: #ff4747;
 }
-.button.form-delete {
+.button.form-delete,
+.button.form-delete:hover {
   background-color: #ff4747;
+  outline-color: #ff4747;
 }
 select {
   background-color: initial;
@@ -152,6 +159,13 @@ select {
 .vertical-tab-item {
   background-color: #f8f8f8;
   border: 1px solid #cccccc;
+}
+.vertical-tab-selected.vertical-tab-item {
+  background-color: #ffffff;
+}
+.vertical-tab-selected strong,
+.vertical-tab-selected .fieldset-legend {
+  color: #333344;
 }
 tr.even, tr.odd {
   border-color: #cccccc;

@@ -49,7 +49,7 @@ a:hover {
 .l-header .menu a {
   font-size: 1.2rem;
   display: block;
-  padding: 10px 1.8vw;
+  padding: 8px 10px;
 }
 .l-header .menu a:hover {
   text-decoration: none;
@@ -57,7 +57,7 @@ a:hover {
 .l-header .menu a.active {
 }
 .l-header .menu ul ul a {
-  text-indent: 20px;
+  text-indent: 15px;
 }
 ol,
 ul,
@@ -75,17 +75,6 @@ ul {
   margin: 0;
 }
 ul.primary li a {
-}
-@media screen and (min-width: 920px) {
-  ul.primary li {
-    float: left;
-    margin: 0 0.15em 0 0;
-  }
-  ul.primary li a {
-    padding: .5em 1.2em;
-    border-top-right-radius: 7px;
-    border-top-left-radius: 7px;
-  }
 }
 ul.secondary a {
   padding: .3em .7em;
@@ -110,7 +99,7 @@ table {
   padding-bottom: 1em;
 }
 tr.even {
-  background-color: initial;/* FIXME palette? */
+  background-color: initial;
 }
 td, th {
   padding: 4px 10px;
@@ -132,6 +121,7 @@ button.form-submit,
 .button {
   padding: 7px 15px;
   margin: 0 10px 15px 0;
+  display: inline-block;
 }
 .button:hover {
   text-decoration: none;
@@ -152,7 +142,12 @@ select {
   word-break: break-all;
   font-size: 96%;
 }
-/* pager */
+.ui-button-icon-only {
+  overflow: hidden;
+}
+/**
+ * Pager.
+ */
 .item-list .pager li {
   display: inline-block;
   padding: 0;
@@ -166,7 +161,9 @@ select {
 .item-list .pager a:hover {
   text-decoration: none;
 }
-/* search */
+/**
+ * Search.
+ */
 .search-block-form > div {
   display: flex;
 }
@@ -198,14 +195,6 @@ h2 {
   font-size: 1.6em;
   line-height: 1.5;
 }
-@media screen and (min-width: 960px) {
-  h1 {
-    font-size: 2.3em;
-  }
-  h2 {
-    font-size: 1.7em;
-  }
-}
 h3 {
   font-size: 1.5em;
 }
@@ -222,7 +211,9 @@ h6 {
 .form-type-radio label {
   margin-left: 4px;
 }
-/* hero */
+/**
+ * Hero block.
+ */
 .block-hero {
   font-size: 120%;
   margin-left: -1.9375rem;
@@ -246,32 +237,8 @@ h6 {
 .block-hero-inner {
   margin: 2em 0;
 }
-@media screen and (min-width: 600px) {
-  .block-hero {
-    height: 100vh;
-  }
-  .block-hero-inner {
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-@media screen and (min-width: 960px) {
-  .block-hero {
-    font-size: 160%;
-    padding-left: 8vw;
-    padding-right: 8vw;
-  }
-}
-@media screen and (min-width: 1200) {
-  .block-hero {
-    font-size: 190%;
-  }
-}
 .l-header-inner .block {
-  padding: 25px 1.8vw;
+  padding: 25px 20px;
 }
 .l-header-inner .block-system-main-menu {
   padding: 0;
@@ -305,7 +272,9 @@ h6 {
 .submitted {
   font-size: 0.9rem;
 }
-/* Push the footer down to the bottom of the page. */
+/**
+ * Push footer down to bottom of page.
+ */
 .layout {
   box-sizing: border-box;
   height: 100vh;
@@ -331,26 +300,9 @@ h6 {
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
-@media screen and (max-width: 570px) {
-  .container-fluid {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .l-header .container-fluid {
-    padding: 0;
-  }
-  .block-hero {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-  .l-header .menu a,
-  .header-menu a {
-    padding: 8px 10px;
-  }
-}
-/** comments **/
+/**
+ * Comments.
+ **/
 .comment {
   padding: 15px;
   margin: 0 0 15px;
@@ -378,7 +330,9 @@ h6 {
   margin-bottom: 0;
   text-align: right;
 }
-/* teaserlists */
+/**
+ * Teaserlists.
+ */
 .view-promoted .view-content {
   margin-bottom: 40px;
 }
@@ -389,7 +343,53 @@ h6 {
   display: block;
   text-align: right;
 }
+/**
+ * Media queries.
+ */
+@media screen and (min-width: 600px) {
+  .block-hero {
+    height: 100vh;
+  }
+  .block-hero-inner {
+    margin: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 920px) {
+  ul.primary li {
+    float: left;
+    margin: 0 0.15em 0 0;
+  }
+  ul.primary li a {
+    padding: .5em 1.2em;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+  .l-header .menu a {
+    padding: 10px 2vw;
+  }
+  .l-header-inner .block {
+    padding: 25px 2vw;
+  }
+  .l-header-inner .block-system-main-menu {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 960px) {
+  h1 {
+    font-size: 2.3em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+  .block-hero {
+    font-size: 160%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
   .view-promoted .view-content {
     display: flex;
     flex-wrap: wrap;
@@ -406,5 +406,28 @@ h6 {
   .view-promoted .view-content > div:last-child,
   .view-promoted .view-content > div:nth-last-child(2) {
     border-bottom: none;
+  }
+  .node {
+    max-width: 800px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-hero {
+    font-size: 190%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .l-header .container-fluid {
+    padding: 0;
+  }
+  .block-hero {
+    margin-left: -15px;
+    margin-right: -15px;
   }
 }
