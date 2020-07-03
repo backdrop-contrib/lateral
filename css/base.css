@@ -343,6 +343,11 @@ h6 {
   display: block;
   text-align: right;
 }
+img.align-right,
+img.align-left {
+  float: none;
+  margin: 1em 0;
+}
 /**
  * Media queries.
  */
@@ -376,6 +381,14 @@ h6 {
   }
   .l-header-inner .block-system-main-menu {
     padding: 0;
+  }
+  img.align-right {
+    float: right;
+    margin: 0 0 10px 20px;
+  }
+  img.align-left {
+    float: left;
+    margin: 0 20px 10px 0;
   }
 }
 @media screen and (min-width: 960px) {
