@@ -351,6 +351,17 @@ img.align-left {
   float: none;
   margin: 1em 0;
 }
+.field-type-taxonomy-term-reference .field-item {
+  float: left;
+  margin: 0;
+}
+.field-type-taxonomy-term-reference .field-item::after {
+  content: ",";
+  margin-right: .3em;
+}
+.field-type-taxonomy-term-reference .field-item:last-child::after {
+  content: "";
+}
 /**
  * Media queries.
  */
