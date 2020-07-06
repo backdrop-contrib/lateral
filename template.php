@@ -39,11 +39,14 @@ function lateral_preprocess_page(&$variables) {
  * @see layout.tpl.php
  */
 function lateral_preprocess_layout(&$variables) {
-  // FIXME this only works with regular layouts with a "header" region.
   if (isset($variables['content']['header'])) {
     $header = '<div class="l-header-scrollable">' . $variables['content']['header'] . '</div>';
     $header .= '<div class="menu-toggle-button"><span class="menu-toggle-button-text">' . t('Menu') . '</span></div>';
     $variables['content']['header'] = $header;
+  }
+  if (isset($variables['layout_info']['flexible'])) {
+    // Add css class to layout.
+    $variables['classes'][] = 'layout-' . backdrop_clean_css_identifier($variables['layout_info']['name']);
   }
 }
 

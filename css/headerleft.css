@@ -7,13 +7,19 @@
   width: 22vw;
 }
 .l-wrapper,
-.l-footer {
+.l-footer,
+.layout-flexible-content {
   margin-left: 22vw;
+}
+.layout--flexible .l-footer {
+  margin-left: 0;
 }
 .js .menu-dropdown > li {
   float: none;
 }
-.l-header-inner {
+.l-header-inner,
+.layout--flexible .l-header .row,
+.layout--flexible .l-header .l-col {
   margin: 0;
   padding: 0;
 }
@@ -101,7 +107,8 @@
     transform: rotate(45deg);
   }
   .l-wrapper,
-  .l-footer {
+  .l-footer,
+  .layout-flexible-content {
     width: auto;
     margin-left: 20px;
   }
