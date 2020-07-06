@@ -1,20 +1,16 @@
 # Lateral
 
-Highly configurable and mobile friendly Backdrop CMS theme, work in progress...
+Highly configurable and mobile friendly Backdrop CMS theme.
 
 Available options:
 
 - Choose if your header should be placed left or right
-- Choose the (web)font to use (three options available)
+- Choose the font - three options available
 - Color module support: choose one of the presets or create your own
 
 ## Installation
 
 - Install this theme using the official [Backdrop CMS instructions](https://backdropcms.org/guide/themes)
-
-## Known Issues
-
-Currently doesn't play nicely with flexible layout templates.
 
 ## Issues
 
