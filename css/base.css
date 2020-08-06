@@ -417,6 +417,15 @@ img.align-left {
 .field-type-taxonomy-term-reference .field-item:last-child::after {
   content: "";
 }
+.breadcrumb {
+  display: table;
+  margin: 0 auto;
+  padding: .5em 0 1em;
+}
+.align-left,
+.align-right {
+  float: none;
+}
 /**
  * Media queries.
  */
@@ -446,13 +455,13 @@ img.align-left {
   .l-header .menu a {
     padding: 10px 2vw;
   }
-  img.align-right {
+  .align-right {
     float: right;
-    margin: 0 0 10px 20px;
+    margin: 4px 0 10px 20px;
   }
-  img.align-left {
+  .align-left {
     float: left;
-    margin: 0 20px 10px 0;
+    margin: 4px 20px 10px 0;
   }
 }
 @media screen and (min-width: 960px) {
@@ -485,7 +494,8 @@ img.align-left {
     border-bottom: none;
   }
   .node {
-    max-width: 800px;
+    max-width: 840px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
