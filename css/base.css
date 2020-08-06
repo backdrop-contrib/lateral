@@ -189,14 +189,50 @@ select {
 .search-block-form input.form-search {
   padding: 6px;
 }
+.search-block-form .form-actions {
+  position: relative;
+}
 .search-block-form input.form-submit {
   border: none;
-  padding: 7px 12px;
   margin: 0;
+  padding: 0;
+  width: 38px;
+  height: 38px;
+  display: block;
+  text-indent: -333px;
+  overflow: hidden;
+  position: relative;
+  z-index: 4;
+  background: transparent;
+  cursor: pointer;
+}
+.search-block-form .form-actions::before {
+  content: " ";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 3;
+  top: 6px;
+  left: 6px;
+}
+.search-block-form .form-actions::after {
+  content: " ";
+  display: block;
+  width: 1px;
+  height: 10px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  z-index: 2;
+  top: 23px;
+  right: 8px;
 }
 .search-block-form input.form-submit:hover,
 .search-block-form input.form-submit:focus {
   outline: none;
+  background: transparent;
 }
 .search-info {
   font-size: 95%;
