@@ -24,11 +24,8 @@ a,
 .l-header .menu a:hover {
   background-color: #2c4a64;
 }
-.header-left .l-header .menu a.active {
-  border-left: 10px solid #2c4a64;
-}
-.header-right .l-header .menu a.active {
-  border-right: 10px solid #2c4a64;
+.l-header .menu a.active::after {
+  background-color: #2c4a64;
 }
 ul.primary li a,
 ul.primary li a:hover {

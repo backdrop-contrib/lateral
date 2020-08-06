@@ -32,6 +32,9 @@
 .l-header-inner {
   position: relative;
 }
+.l-header .menu a.active::after {
+  right: 0;
+}
 .header-identity-wrapper {
   display: block;
   float: none;
@@ -50,26 +53,23 @@
     opacity: 0.9;
   }
   .l-header {
-    width: 270px;
+    width: 290px;
     bottom: 0;
-    right: -250px;
+    right: -270px;
     transition: right 0.3s;
     box-shadow: 5px 0 10px #0001;
   }
-  .l-header .block,
-  .l-header .menu {
+  .l-header .l-header-scrollable {
     visibility: hidden;
-  }
-  .l-header .block-menu {
-    visibility: visible;
+    overflow-y: hidden;
   }
   .l-header.nav-visible {
     right: 0;
     transition: right 0.3s;
   }
-  .l-header.nav-visible .block,
-  .l-header.nav-visible .menu {
+  .l-header.nav-visible .l-header-scrollable {
     visibility: visible;
+    overflow-y: auto;
   }
   .l-header .menu-toggle-button {
     width: 42px;

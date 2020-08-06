@@ -24,6 +24,10 @@ a:hover {
   margin: 0;
   padding: 0;
 }
+.l-header .container-fluid {
+  margin: 0;
+  padding: 0;
+}
 .l-header .menu {
   list-style: none;
   padding: 0;
@@ -35,6 +39,9 @@ a:hover {
   list-style-image: none;
   padding: 0;
   margin: 0;
+}
+.l-header .menu li a {
+  position: relative;
 }
 .l-header .menu ul li a::before {
   content: " ";
@@ -48,6 +55,14 @@ a:hover {
   vertical-align: middle;
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
+}
+.l-header .menu a.active::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 10px;
+  top: 0;
 }
 .l-header .menu a {
   font-size: 1.2rem;
@@ -177,6 +192,7 @@ select {
 .search-block-form input.form-submit {
   border: none;
   padding: 7px 12px;
+  margin: 0;
 }
 .search-block-form input.form-submit:hover,
 .search-block-form input.form-submit:focus {
@@ -245,7 +261,8 @@ h6 {
   padding: 25px 20px;
 }
 .l-header .block-system-main-menu {
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .block-system-header .header-menu {
   margin-top: 25px;
@@ -392,12 +409,6 @@ img.align-left {
   }
   .l-header .menu a {
     padding: 10px 2vw;
-  }
-  .l-header .block {
-    padding: 25px 2vw;
-  }
-  .l-header .block-system-main-menu {
-    padding: 0;
   }
   img.align-right {
     float: right;

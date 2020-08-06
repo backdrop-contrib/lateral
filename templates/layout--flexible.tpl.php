@@ -61,9 +61,9 @@
           <?php endforeach; ?>
           </div>
         </div>
-        <?php if ($row['element'] == 'header'): ?>
-        <div class="menu-toggle-button"><span class="menu-toggle-button-text">' . t('Menu') . '</span></div>
+      <?php if ($row['element'] == 'header'): ?>
       </div>
+      <div class="menu-toggle-button"><span class="menu-toggle-button-text">' . t('Menu') . '</span></div>
       <?php endif; ?>
     </<?php print $row['element']; ?>>
   <?php endforeach; ?>
