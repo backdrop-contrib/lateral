@@ -101,7 +101,7 @@ select,
 textarea {
   border: 1px solid #cccccc;
   color: #333344;
-  background: initial;
+  background-color: #ffffff;
 }
 .form-item-disabled input {
   background-color: #f8f8f8;
