@@ -475,7 +475,6 @@ h6 {
   .view-promoted .view-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
   }
   .view-mode-teaser > h2 {
     margin-top: 0;
@@ -486,7 +485,7 @@ h6 {
     width: calc(50% - 81px);
   }
   .view-promoted .view-content > div:last-child,
-  .view-promoted .view-content > div:nth-last-child(2) {
+  .view-promoted .view-content > div:nth-last-child(2):nth-child(odd) {
     border-bottom: none;
   }
   .node {
