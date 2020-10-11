@@ -143,7 +143,6 @@ input.button-danger:hover {
   outline-color: #ff4747;
 }
 select {
-  background-color: initial;
   border: 1px solid #cccccc;
 }
 .vertical-tabs {
