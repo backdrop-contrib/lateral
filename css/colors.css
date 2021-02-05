@@ -228,6 +228,9 @@ td.active {
     border-right: 1px solid #cccccc;
   }
 }
+.maintenance-page {
+  background-color: #e6e6e7;
+}
 .maintenance-page .l-container {
   border: 1px solid #cccccc;
   background-color: #f8f8f8;
