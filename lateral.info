@@ -5,6 +5,7 @@ backdrop = 1.x
 
 stylesheets[all][] = css/base.css
 stylesheets[all][] = css/colors.css
+stylesheets[screen][] = css/maintenance.css
 
 scripts[] = js/helper.js
 

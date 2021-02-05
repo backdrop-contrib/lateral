@@ -1,0 +1,8 @@
+/* Styles for maintenance mode */
+.maintenance-page .l-container {
+  font: 1rem/1.5rem "Open Sans", arial, sans-serif;
+  max-width: 680px;
+  padding: 30px;
+  margin: 18vh auto;
+  box-shadow: 0 0 24px #0002;
+}
