@@ -513,3 +513,12 @@ h6 {
     margin-right: -15px;
   }
 }
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br,
+.ui-corner-bl,
+.ui-corner-tr,
+.ui-corner-tl {
+  border-radius: 0 !important;
+}

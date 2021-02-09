@@ -5,6 +5,7 @@ button,
 input,
 optgroup,
 select,
-textarea {
+textarea,
+.ui-widget {
   font: 1rem/1.6 'Open Sans', sans-serif;
 }
