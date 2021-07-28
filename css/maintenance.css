@@ -6,3 +6,6 @@
   margin: 18vh auto;
   box-shadow: 0 0 30px #0003;
 }
+.maintenance-page header img {
+  max-width: 200px;
+}
