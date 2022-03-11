@@ -65,6 +65,7 @@ function lateral_menu_toggle() {
 function lateral_css_alter(&$css) {
   unset($css['core/modules/system/css/menu-dropdown.theme.css']);
   unset($css['core/modules/system/css/menu-toggle.theme.css']);
+  unset($css['core/modules/system/css/menu-toggle.theme.breakpoint.css']);
   unset($css['core/misc/smartmenus/css/sm-core-css.css']);
   unset($css['core/modules/system/css/menu-dropdown.theme.breakpoint.css']);
   unset($css['core/modules/system/css/menu-dropdown.theme.breakpoint-queries.css']);
