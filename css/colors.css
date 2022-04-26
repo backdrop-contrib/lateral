@@ -275,3 +275,6 @@ td.active {
 .image-library-image {
   box-shadow: none;
 }
+.view-promoted-cards .views-grid-box {
+  background: #f8f8f8;
+}
