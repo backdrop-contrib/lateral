@@ -3,8 +3,9 @@
   max-width: none;
 }
 .view-promoted-cards {
+  max-width: 2400px;
   padding: 0;
-  margin: 1rem 0 3rem;
+  margin: 1rem auto 3rem;
 }
 .view-promoted-cards .views-view-grid {
   gap: 3rem;
