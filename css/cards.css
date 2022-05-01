@@ -13,7 +13,7 @@
 .view-promoted-cards .views-grid-box {
   border: none;
   padding: 0 0 1rem;
-  max-width: 800px;
+  max-width: 600px;
 }
 .view-promoted-cards .views-field {
   padding: 0 1rem;
@@ -21,11 +21,16 @@
 .view-promoted-cards .views-field-field-image {
   padding: 0;
 }
+@media (max-width: 1200px) {
+  .view-promoted-cards .views-view-grid {
+    gap: 1.5rem;
+  }
+}
 @media (max-width: 1024px) {
   .view-promoted-cards .views-view-grid {
     display: block;
   }
   .view-promoted-cards .views-grid-box {
-    margin: 0 0 2rem;
+    margin: 0 auto 2rem;
   }
 }
