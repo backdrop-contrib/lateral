@@ -11,6 +11,9 @@
 .layout-flexible-content {
   margin-right: 22vw;
 }
+.layout .layout .layout-flexible-content {
+  margin-right: 0;
+}
 .layout--flexible .l-footer {
   margin-left: 0;
 }

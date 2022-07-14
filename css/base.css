@@ -8,6 +8,10 @@ a:hover {
   max-width: 100%;
   margin: 0 1rem;
 }
+.layout .layout .container-fluid {
+  margin: 0;
+  padding: 0;
+}
 .header-site-name-link {
   background: inherit;
   line-height: 1.6;
@@ -339,9 +343,16 @@ h6 {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.layout .layout {
+  display: block;
+}
 .admin-bar body .layout {
   padding-top: 33px;
   margin-top: -33px;
+}
+.admin-bar body .layout .layout {
+  padding-top: 0;
+  margin-top: 0;
 }
 .l-wrapper {
   -webkit-flex: 1 0 auto;
