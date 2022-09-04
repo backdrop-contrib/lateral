@@ -329,6 +329,7 @@ h6 {
 }
 .submitted {
   font-size: 0.9rem;
+  margin: .9rem 0;
 }
 /**
  * Push footer down to bottom of page.
@@ -373,6 +374,9 @@ h6 {
   margin: 0 0 15px;
   border-radius: 4px;
 }
+.comment p {
+  margin: .7rem 0;
+}
 .comments .indented {
   position: relative;
 }
@@ -381,15 +385,39 @@ h6 {
   display: block;
   width: 15px;
   height: 15px;
-  transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); /* LTR */
   position: absolute;
   top: 20px;
-  left: -28px;
+  left: -28px; /* LTR */
 }
-.comment h3 {
+[dir="rtl"] .comments .indented .comment::before {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+  left: auto;
+  right: -28px;
+}
+.comment .comment-title {
   margin: 0;
   font-size: 1.2rem;
+}
+.comment.comment-title-hidden .comment-title .permalink {
+  display: block;
+  width: 1em;
+  height: 1em;
+  float: left; /* LTR */
+  margin: .7rem 8px 0 0;
+  text-indent: -333px;
+  overflow: hidden;
+  background-color: currentColor;
+  -webkit-mask-image: url("../images/permalink.svg");
+  mask-image: url("../images/permalink.svg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+[dir="rtl"] .comment.comment-title-hidden .comment-title .permalink {
+  float: right;
+  margin: .7rem 0 0 8px;
 }
 .comment ul.links {
   display: block;
