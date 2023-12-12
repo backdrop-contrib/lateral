@@ -1,3 +1,12 @@
+/**
+ * Edit hero image.
+ */
+.block-hero-no-image {
+  background-image: url("../images/fairyland-canyon.jpg");
+}
+/**
+ * Base Styles.
+ */
 a {
   text-decoration: none;
 }
@@ -279,9 +288,6 @@ h6 {
   transform: none;
   padding: 0 1em;
   overflow: hidden;
-}
-.block-hero-no-image {
-  background-image: url("../images/fairyland-canyon.jpg");
 }
 .block-hero .contextual-links-wrapper {
   width: 40px;
