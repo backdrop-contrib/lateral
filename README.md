@@ -12,7 +12,7 @@ Available options:
 
 - Install this theme using the official [Backdrop CMS instructions](https://backdropcms.org/guide/themes)
 
-- ## How to Change Hero Image
+## How to Change Hero Image
 
 To change the Hero Image add your own image to the images directory in the theme files and edit the first line of the 
 base.css file to call on that image rather than the default image. 
