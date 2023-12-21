@@ -558,3 +558,6 @@ h6 {
 .ui-corner-tl {
   border-radius: 0 !important;
 }
+.unpublished {
+  background: transparent url("../images/unpub.png") repeat;
+}
