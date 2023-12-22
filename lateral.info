@@ -9,6 +9,7 @@ stylesheets[all][] = css/colors.css
 stylesheets[screen][] = css/maintenance.css
 
 scripts[] = js/helper.js
+tinymce_content_css[] = css/editor.css
 
 settings[header_position] = 'left'
 settings[font] = 'opensans'

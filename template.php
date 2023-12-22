@@ -110,3 +110,31 @@ function lateral_ckeditor_settings_alter(&$settings, $format) {
     $settings['contentsCss'][] = $path . '/css/colors.css';
   }
 }
+
+/**
+ * Implements hook_tinymce_options_alter().
+ */
+function lateral_tinymce_options_alter(array &$options, $format) {
+  global $base_url, $base_path;
+  $path = $base_path . backdrop_get_path('theme', 'lateral');
+  $font_selected = theme_get_setting('font');
+
+  if ($font_selected == 'merriweather') {
+    $options['tiny_options']['content_css'][] = $path . '/css/merriweather.css';
+  }
+  elseif ($font_selected == 'opensans') {
+    $options['tiny_options']['content_css'][] = $path . '/css/use-opensans.css';
+  }
+  $color_uris = theme_get_setting('color.files');
+  if ($color_uris) {
+    // We only have a single color css file.
+    $color_uri = reset($color_uris);
+    $url = file_create_url($color_uri);
+    $color_css = substr($url, strlen($base_url));
+    $options['tiny_options']['content_css'][] = $color_css;
+  }
+  else {
+    // No color module setting, add the theme's default file.
+    $options['tiny_options']['content_css'][] = $path . '/css/colors.css';
+  }
+}

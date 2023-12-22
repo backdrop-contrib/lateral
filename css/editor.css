@@ -1,0 +1,80 @@
+/**
+ * @file
+ * Basic styles to apply to editor content.
+ */
+body {
+  font: 1rem/1.6 verdana, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ol,
+ul {
+  margin: 1em 0 1em 1em;
+  padding: 0 0 0 1.2em;
+}
+blockquote {
+  margin: 1em 0;
+  padding: 0 0 0 1em;
+  border-left: 4px solid #ddd;
+}
+pre {
+  padding: 4px;
+  max-width: 100%;
+  overflow: auto;
+  border-radius: 3px;
+}
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  margin: 1em 0 1.5em;
+}
+tr.even {
+  background-color: initial;
+}
+td, th {
+  padding: 4px 10px;
+  vertical-align: top;
+}
+audio,
+video,
+iframe,
+form,
+button,
+input,
+optgroup,
+select,
+textarea {
+  max-width: 100%;
+}
+h1 {
+  font-size: 2em;
+  line-height: 1.4;
+}
+h2 {
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.1em;
+}
+h5 {
+  font-size: 1em;
+}
+h6 {
+  font-size: 1em;
+}
+@media screen and (min-width: 960px) {
+  h1 {
+    font-size: 2.3em;
+  }
+  h2 {
+    font-size: 1.7em;
+  }
+}
