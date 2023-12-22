@@ -8,6 +8,10 @@ Available options:
 - Choose the font - three options available
 - Color module support: choose one of the presets or create your own
 
+By default the hero block on the home page has a beautiful background image.
+But you may have a better one. Changing is easy - open the block form with the
+block's contextual dropdown menu, upload your own image, save the block.
+
 ## Installation
 
 - Install this theme using the official [Backdrop CMS instructions](https://backdropcms.org/guide/themes)
