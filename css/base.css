@@ -320,7 +320,7 @@ h6 {
   font-size: initial;
 }
 .admin-bar .l-header {
-  padding-top: 33px;
+  padding-top: var(--admin-bar-height, 33px);
 }
 .l-footer {
   padding: 1em 0;
@@ -560,4 +560,7 @@ h6 {
 }
 .unpublished {
   background: transparent url("../images/unpub.png") repeat;
+}
+#admin-bar .admin-bar-search input {
+  font: inherit;
 }
