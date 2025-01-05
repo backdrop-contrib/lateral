@@ -235,6 +235,12 @@ td.active {
   border: 1px solid #cccccc;
   background-color: #f8f8f8;
 }
+.user-simplified-page-body {
+  background-color: #f8f8f8;
+}
+.user-simplified-page-wrapper {
+  background-color: #ffffff;
+}
 .ui-dialog .ui-dialog-content {
   background-color: #ffffff;
 }
