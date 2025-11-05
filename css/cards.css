@@ -8,7 +8,7 @@
   margin: 1rem auto 3rem;
 }
 .view-promoted-cards .views-view-grid {
-  gap: 3rem;
+  gap: var(--views-responsive-grid--layout-gap, 3rem);
 }
 .view-promoted-cards .views-grid-box {
   border: none;
@@ -23,7 +23,7 @@
 }
 @media (max-width: 1200px) {
   .view-promoted-cards .views-view-grid {
-    gap: 1.5rem;
+    gap: var(--views-responsive-grid--layout-gap, 1.5rem);
   }
 }
 @media (max-width: 1024px) {
