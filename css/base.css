@@ -549,3 +549,9 @@ h6 {
 #admin-bar .admin-bar-search input {
   font: inherit;
 }
+table.sticky-enabled {
+  width: 100%;
+}
+.ui-widget-content .pager a {
+  color: inherit;
+}
