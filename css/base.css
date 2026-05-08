@@ -58,7 +58,6 @@ a:hover {
   margin: 0 10px 0 -5px;
   vertical-align: middle;
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
 }
 .l-header .menu a.active::after {
   content: " ";
@@ -224,7 +223,6 @@ select {
   width: 1px;
   height: 10px;
   transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
   position: absolute;
   z-index: 2;
   top: 23px;
@@ -337,11 +335,7 @@ h6 {
 .layout {
   box-sizing: border-box;
   height: 100vh;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 .layout .layout {
@@ -356,14 +350,10 @@ h6 {
   margin-top: 0;
 }
 .l-wrapper {
-  -webkit-flex: 1 0 auto;
-  -ms-flex: 1 0 auto;
   flex: 1 0 auto;
 }
 .l-header,
 .l-footer {
-  -webkit-flex: 0 0 auto;
-  -ms-flex: 0 0 auto;
   flex: 0 0 auto;
 }
 /**
@@ -385,14 +375,12 @@ h6 {
   display: block;
   width: 15px;
   height: 15px;
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg); /* LTR */
   position: absolute;
   top: 20px;
   left: -28px; /* LTR */
 }
 [dir="rtl"] .comments .indented .comment::before {
-  -webkit-transform: rotate(225deg);
   transform: rotate(225deg);
   left: auto;
   right: -28px;
@@ -410,9 +398,7 @@ h6 {
   text-indent: -333px;
   overflow: hidden;
   background-color: currentColor;
-  -webkit-mask-image: url("../images/permalink.svg");
   mask-image: url("../images/permalink.svg");
-  -webkit-mask-size: cover;
   mask-size: cover;
 }
 [dir="rtl"] .comment.comment-title-hidden .comment-title .permalink {
@@ -471,7 +457,6 @@ h6 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
   }
 }
 @media screen and (min-width: 920px) {
