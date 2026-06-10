@@ -44,9 +44,11 @@ function lateral_preprocess_layout(&$variables) {
     $header .= '<div class="menu-toggle-button"><span class="menu-toggle-button-text">' . t('Menu') . '</span></div>';
     $variables['content']['header'] = $header;
   }
-  if (isset($variables['layout_info']['flexible'])) {
+  // As of core 1.34.0 "layout_info" is null, will get removed in core 2.x.
+  $info = $variables['layout_info'] ?? $variables['layout_template_info'];
+  if ($info && !empty($info['flexible'])) {
     // Add css class to layout.
-    $variables['classes'][] = 'layout-' . backdrop_clean_css_identifier($variables['layout_info']['name']);
+    $variables['classes'][] = backdrop_clean_css_identifier('layout-' . $info['name']);
   }
 }
 
